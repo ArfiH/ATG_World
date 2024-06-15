@@ -1,4 +1,6 @@
 import "./App.css";
+import logo from "./assets/whole.svg"
+// import sideProfile from "./assets/Rectangle6.png"
 
 function App() {
   return (
@@ -7,7 +9,7 @@ function App() {
         <div className="header-container container d-none d-lg-flex align-items-center justify-content-between p-3">
           <div className="header-img" style={{ zIndex: 1 }}>
             <img
-              src="https://dont-copy.netlify.app/assets/logo-S2lIhR8K.svg"
+              src={logo}
               width="162.57px"
               height="24px"
               alt="Logo"
@@ -60,15 +62,21 @@ function App() {
                 backgroundColor: "white",
                 borderRadius: "10px",
                 width: "80%",
-                position: "relative"
+                position: "relative",
               }}
             >
               <button
                 id="close-form"
                 type="button"
-                className="close btn btn-secondary rounded-circle"
+                className="close btn btn-outline-secondary"
                 aria-label="Close"
-                style={{position: "absolute", top: "0px", right: "0px", backgroundColor: "rgb(115, 231, 115)"}}
+                style={{
+                  position: "absolute",
+                  top: "0px",
+                  right: "0px",
+                  backgroundColor: "rgb(115, 231, 163)",
+                  borderRadius: "10px",
+                }}
                 onClick={() => {
                   document.querySelector(".modal-content").close();
                   document.getElementById("create-form").style.display = "none";
@@ -88,7 +96,61 @@ function App() {
                   <h4 className="d-flex fw-bold" id="update">
                     Create Account
                   </h4>
-                  <button className="btn" fdprocessedid="n1c408">
+                  <button
+                    type="button"
+                    className="btn"
+                    fdprocessedid="n1c408"
+                    onClick={() => {
+                      if (
+                        (document.getElementById(
+                          "hide-for-sign-in1"
+                        ).style.display = "block")
+                      ) {
+                        document.getElementById(
+                          "hide-for-sign-in1"
+                        ).style.display = "none";
+                      } else {
+                        document.getElementById(
+                          "hide-for-sign-in1"
+                        ).style.display = "block";
+                      }
+
+                      if (
+                        (document.getElementById(
+                          "hide-for-sign-in2"
+                        ).style.display = "block")
+                      ) {
+                        document.getElementById(
+                          "hide-for-sign-in2"
+                        ).style.display = "none";
+                      } else {
+                        document.getElementById(
+                          "hide-for-sign-in2"
+                        ).style.display = "block";
+                      }
+
+                      if (
+                        (document.getElementById("update").textContent =
+                          "Create Account")
+                      ) {
+                        document.getElementById("update").textContent =
+                          "Sign In";
+                      } else {
+                        document.getElementById("update").textContent =
+                          "Create Account";
+                      }
+                      if (
+                        (document.getElementById("update1").textContent =
+                          "Create Account")
+                      ) {
+                        document.getElementById("update1").textContent =
+                          "Sign In";
+                      } else {
+                        document.getElementById("update1").textContent =
+                          "Create Account";
+                      }
+                    }}
+                  >
                     Already have an account?
                     <span className="text-primary" id="sign-in">
                       Sign In
@@ -154,6 +216,27 @@ function App() {
                           data-bs-dismiss="modal"
                           fdprocessedid="rk667f"
                           id="update1"
+                          onClick={() => {
+                            document.querySelector("#show").style.display =
+                              "none";
+                            document.querySelector(
+                              ".header-button"
+                            ).innerHTML = `<div class="side-profile">
+                      <img
+                        class="rounded-circle"
+                        alt="Profile"
+                        src="https://s3-alpha-sig.figma.com/img/8199/8e3c/09c5683fd07ee58841475464a08ce69f?Expires=1719187200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=qsEHSzyt4wYw7ptWWaMAzMgdXhKBQ1639EW4vFNz8qvkQriMDxN9-r13uHnnrlcOIvzLfIy9m3rfdxuJZUsXgUuvKQ7HuTg1aZLRLjt1J1NR7rhCwGSCTA0wnD0my2RRboMuadNltmVye1bX3IxOOxYwPjWLQPUPZH2I1LgjbGMHegrHrwvtf4Tnpfqpea1a9s5CVNjUrNsJxeZNQkq--flCe0O5iPf6Xx3-02iloN7X5Zo~wgtknpmNFpEKDUMY3IxQvxbqFlDFN7W6rQ9Im7Fch~cZQdN4fcbL~oVkOIDEt4UKIB4TyxyoJWk5-sQdj32k3vqcViHEsxkwjrvAeA__"
+                        width="36px"
+                        height="36px"
+                      />                      
+                      <div className="text-wrapper">Sarthak Kamra</div>
+                      <img
+                  src="data:image/svg+xml,%3csvg%20width='22'%20height='22'%20viewBox='0%200%2022%2022'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20id='baseline-arrow_drop_down-24px'%20clip-path='url(%23clip0_1_1136)'%3e%3cpath%20id='Vector'%20d='M6.41667%209.16669L11%2013.75L15.5833%209.16669H6.41667Z'%20fill='black'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_1_1136'%3e%3crect%20width='22'%20height='22'%20fill='white'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e"
+                  alt="arrow down"
+                />
+                    </div>
+                    `;
+                          }}
                         >
                           Create Account
                         </button>
