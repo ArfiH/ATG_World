@@ -15,7 +15,6 @@ function App() {
           </div>
           <div className="header-form">
             <form className="d-flex" style={{ width: 360, borderRadius: 21 }}>
-              
               <input
                 className="form-control custom-input-search rounded-pill"
                 type="search"
@@ -31,7 +30,11 @@ function App() {
               data-bs-toggle="modal"
               data-bs-target="#exampleModal"
               fdprocessedid="hd62ne"
-              onClick={() => document.getElementById("create-form").style.display = "block"}
+              onClick={() => {
+                document.getElementById("create-form").style.display = "block";
+                document.querySelector(".modal-content").showModal();
+                console.log("clicked");
+              }}
             >
               Create Account.
               <span className="text-primary fw-bold">
@@ -45,24 +48,40 @@ function App() {
             </button>
           </div>
         </div>
-        
+
         <div id="create-form" style={{ zIndex: 2 }}>
           <div
             className="create-account"
             style={{ width: "80%", margin: "auto" }}
           >
-            <div className="modal-content border-0">
-              <div className="modal-header custom-modal-header d-flex justify-content-center mb-4 p-2" style={{backgroundColor: "#EFFFF4", color: "#008A45"}}>
-                Let's learn, share &amp; inspire each other with our passion for computer engineering. Sign up now 🤘🏼
-                {/* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; */}
-                <button
-                  id="close-form"
-                  type="button"
-                  className="close"
-                  aria-label="Close"
-                >
-                  <span aria-hidden="true">×</span>
-                </button>
+            <dialog
+              className="modal-content border-0"
+              style={{
+                backgroundColor: "white",
+                borderRadius: "10px",
+                width: "80%",
+                position: "relative"
+              }}
+            >
+              <button
+                id="close-form"
+                type="button"
+                className="close btn btn-secondary rounded-circle"
+                aria-label="Close"
+                style={{position: "absolute", top: "0px", right: "0px", backgroundColor: "rgb(115, 231, 115)"}}
+                onClick={() => {
+                  document.querySelector(".modal-content").close();
+                  document.getElementById("create-form").style.display = "none";
+                }}
+              >
+                <span aria-hidden="true">×</span>
+              </button>
+              <div
+                className="modal-header custom-modal-header d-flex justify-content-center mb-4 p-2"
+                style={{ backgroundColor: "#EFFFF4", color: "#008A45" }}
+              >
+                Let's learn, share &amp; inspire each other with our passion for
+                computer engineering. Sign up now 🤘🏼
               </div>
               <div className="px-4">
                 <div className="d-flex justify-content-between align-items-center mb-4">
@@ -167,6 +186,7 @@ function App() {
                         <img
                           src="https://dont-copy.netlify.app/assets/signup-OCG-APNN.svg"
                           alt="atg-illustration"
+                          style={{ width: "300px", height: "300px" }}
                         />
                         <p className="info-signup">
                           By signing up, you agree to our Terms &amp;
@@ -177,7 +197,7 @@ function App() {
                   </div>
                 </div>
               </div>
-            </div>
+            </dialog>
           </div>
         </div>
         <div className="container1" style={{ zIndex: 1 }}>
