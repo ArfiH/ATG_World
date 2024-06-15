@@ -1,6 +1,6 @@
 import "./App.css";
-import logo from "./assets/whole.svg"
-import formSideImage from "./assets/formSideImage.jpg"
+import logo from "./assets/whole.svg";
+import formSideImage from "./assets/formSideImage.jpg";
 
 function App() {
   return (
@@ -8,12 +8,7 @@ function App() {
       <div className="container py-4 px-30 mx-auto">
         <div className="header-container container d-none d-lg-flex align-items-center justify-content-between p-3">
           <div className="header-img" style={{ zIndex: 1 }}>
-            <img
-              src={logo}
-              width="162.57px"
-              height="24px"
-              alt="Logo"
-            />
+            <img src={logo} width="162.57px" height="24px" alt="Logo" />
           </div>
           <div className="header-form">
             <form className="d-flex" style={{ width: 360, borderRadius: 21 }}>
@@ -35,7 +30,6 @@ function App() {
               onClick={() => {
                 document.getElementById("create-form").style.display = "block";
                 document.querySelector(".modal-content").showModal();
-                console.log("clicked");
               }}
             >
               Create Account.
@@ -286,6 +280,22 @@ function App() {
           </div>
         </div>
         <div className="container1" style={{ zIndex: 1 }}>
+          <button
+            id="joinBtn"
+            className="join-group btn text-white border-2 border-white"
+            onClick={() => {
+              document.getElementById("create-form").style.display = "block";
+              document.querySelector(".modal-content").showModal();
+              const joinBtn = document.querySelector(".join-group");
+              if (joinBtn.textContent === "Join Group") {
+                joinBtn.textContent = "Leave Group";
+              } else {
+                joinBtn.textContent = "Join Group";
+              }
+            }}
+          >
+            Join Group
+          </button>
           <div className="container1-text">
             <h1 className="text-white">Computer Engineering</h1>
             <p className="text-white mb-5">

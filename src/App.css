@@ -74,6 +74,7 @@ body {
   height: 480px;
   width: 100%;
   overflow: hidden;
+  position: relative;
 }
 
 .container1 img {
@@ -135,4 +136,25 @@ body {
   margin-left: 5rem;
   gap: 0.5rem;
   align-items: center;
+}
+
+.join-group {
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.join-group:hover {
+    border: none;
+}
+
+#joinBtn {
+    display: none;
+}
+
+@media (max-width: 991px) {
+    #joinBtn {
+        display: block;
+    }
 }
