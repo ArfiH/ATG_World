@@ -1,0 +1,13 @@
+.header-container {
+    z-index: 1;
+}
+
+.header-form form {
+    width: 360px; 
+    border-radius: 21px;
+}
+
+.custom-search img {
+    border: none;
+}
+
