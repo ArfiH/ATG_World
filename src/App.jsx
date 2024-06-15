@@ -31,6 +31,7 @@ function App() {
               data-bs-toggle="modal"
               data-bs-target="#exampleModal"
               fdprocessedid="hd62ne"
+              onClick={() => document.getElementById("create-form").style.display = "block"}
             >
               Create Account.
               <span className="text-primary fw-bold">
@@ -44,17 +45,16 @@ function App() {
             </button>
           </div>
         </div>
-        {/* here */}
+        
         <div id="create-form" style={{ zIndex: 2 }}>
           <div
             className="create-account"
-            style={{ width: "70%", margin: "auto" }}
+            style={{ width: "80%", margin: "auto" }}
           >
-            <div className="modal-content">
-              <div className="modal-header custom-modal-header d-flex justify-content-center mb-4">
-                Let's learn, share &amp; inspire each other with our passion for
-                computer engineering. Sign up now 🤘🏼
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <div className="modal-content border-0">
+              <div className="modal-header custom-modal-header d-flex justify-content-center mb-4 p-2" style={{backgroundColor: "#EFFFF4", color: "#008A45"}}>
+                Let's learn, share &amp; inspire each other with our passion for computer engineering. Sign up now 🤘🏼
+                {/* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; */}
                 <button
                   id="close-form"
                   type="button"
@@ -327,7 +327,7 @@ function App() {
                         height={48}
                       />
                       <div className="d-flex flex-column">
-                        <div className="text-wrapper">Siddharth Goyal</div>
+                        <div className="text-wrapper">Sarthak Kamra</div>
                         <div className="d-lg-none">
                           <img
                             src="data:image/svg+xml,%3csvg%20width='18'%20height='18'%20viewBox='0%200%2018%2018'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20id='icon/action/visibility_24px'%3e%3cpath%20id='icon/action/visibility_24px_2'%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M0.75%209C2.0475%205.7075%205.25%203.375%209%203.375C12.75%203.375%2015.9525%205.7075%2017.25%209C15.9525%2012.2925%2012.75%2014.625%209%2014.625C5.25%2014.625%202.0475%2012.2925%200.75%209ZM15.615%209C14.3775%206.4725%2011.8425%204.875%209%204.875C6.1575%204.875%203.6225%206.4725%202.385%209C3.6225%2011.5275%206.1575%2013.125%209%2013.125C11.8425%2013.125%2014.3775%2011.5275%2015.615%209ZM9%207.125C10.035%207.125%2010.875%207.965%2010.875%209C10.875%2010.035%2010.035%2010.875%209%2010.875C7.965%2010.875%207.125%2010.035%207.125%209C7.125%207.965%207.965%207.125%209%207.125ZM5.625%209C5.625%207.14%207.14%205.625%209%205.625C10.86%205.625%2012.375%207.14%2012.375%209C12.375%2010.86%2010.86%2012.375%209%2012.375C7.14%2012.375%205.625%2010.86%205.625%209Z'%20fill='%23525252'/%3e%3c/g%3e%3c/svg%3e"
@@ -428,7 +428,7 @@ function App() {
                         height={48}
                       />
                       <div className="d-flex flex-column">
-                        <div className="text-wrapper">Siddharth Goyal</div>
+                        <div className="text-wrapper">Sarah West</div>
                         <div className="d-lg-none">
                           <img
                             src="data:image/svg+xml,%3csvg%20width='18'%20height='18'%20viewBox='0%200%2018%2018'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20id='icon/action/visibility_24px'%3e%3cpath%20id='icon/action/visibility_24px_2'%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M0.75%209C2.0475%205.7075%205.25%203.375%209%203.375C12.75%203.375%2015.9525%205.7075%2017.25%209C15.9525%2012.2925%2012.75%2014.625%209%2014.625C5.25%2014.625%202.0475%2012.2925%200.75%209ZM15.615%209C14.3775%206.4725%2011.8425%204.875%209%204.875C6.1575%204.875%203.6225%206.4725%202.385%209C3.6225%2011.5275%206.1575%2013.125%209%2013.125C11.8425%2013.125%2014.3775%2011.5275%2015.615%209ZM9%207.125C10.035%207.125%2010.875%207.965%2010.875%209C10.875%2010.035%2010.035%2010.875%209%2010.875C7.965%2010.875%207.125%2010.035%207.125%209C7.125%207.965%207.965%207.125%209%207.125ZM5.625%209C5.625%207.14%207.14%205.625%209%205.625C10.86%205.625%2012.375%207.14%2012.375%209C12.375%2010.86%2010.86%2012.375%209%2012.375C7.14%2012.375%205.625%2010.86%205.625%209Z'%20fill='%23525252'/%3e%3c/g%3e%3c/svg%3e"
@@ -534,7 +534,7 @@ function App() {
                     </li>
                   </ul>
                   <button
-                    className="custom-post-link btn mb-4 fw-semibold"
+                    className="custom-post-link btn mb-4 fw-semibold border-secondary"
                     style={{ color: "rgb(229, 97, 53)", width: "100%" }}
                   >
                     Visit WebSite
@@ -549,7 +549,7 @@ function App() {
                         height={48}
                       />
                       <div className="d-flex flex-column">
-                        <div className="text-wrapper">Siddharth Goyal</div>
+                        <div className="text-wrapper">Ronal Jones</div>
                         <div className="d-lg-none">
                           <img
                             src="data:image/svg+xml,%3csvg%20width='18'%20height='18'%20viewBox='0%200%2018%2018'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20id='icon/action/visibility_24px'%3e%3cpath%20id='icon/action/visibility_24px_2'%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M0.75%209C2.0475%205.7075%205.25%203.375%209%203.375C12.75%203.375%2015.9525%205.7075%2017.25%209C15.9525%2012.2925%2012.75%2014.625%209%2014.625C5.25%2014.625%202.0475%2012.2925%200.75%209ZM15.615%209C14.3775%206.4725%2011.8425%204.875%209%204.875C6.1575%204.875%203.6225%206.4725%202.385%209C3.6225%2011.5275%206.1575%2013.125%209%2013.125C11.8425%2013.125%2014.3775%2011.5275%2015.615%209ZM9%207.125C10.035%207.125%2010.875%207.965%2010.875%209C10.875%2010.035%2010.035%2010.875%209%2010.875C7.965%2010.875%207.125%2010.035%207.125%209C7.125%207.965%207.965%207.125%209%207.125ZM5.625%209C5.625%207.14%207.14%205.625%209%205.625C10.86%205.625%2012.375%207.14%2012.375%209C12.375%2010.86%2010.86%2012.375%209%2012.375C7.14%2012.375%205.625%2010.86%205.625%209Z'%20fill='%23525252'/%3e%3c/g%3e%3c/svg%3e"
@@ -648,7 +648,7 @@ function App() {
                     </li>
                   </ul>
                   <button
-                    className="custom-post-link btn mb-4 fw-semibold"
+                    className="custom-post-link btn mb-4 fw-semibold border-secondary"
                     style={{ color: "rgb(2, 184, 117)", width: "100%" }}
                   >
                     Apply on Timejobs
@@ -663,7 +663,7 @@ function App() {
                         height={48}
                       />
                       <div className="d-flex flex-column">
-                        <div className="text-wrapper">Siddharth Goyal</div>
+                        <div className="text-wrapper">Joseph Gray</div>
                         <div className="d-lg-none">
                           <img
                             src="data:image/svg+xml,%3csvg%20width='18'%20height='18'%20viewBox='0%200%2018%2018'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20id='icon/action/visibility_24px'%3e%3cpath%20id='icon/action/visibility_24px_2'%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M0.75%209C2.0475%205.7075%205.25%203.375%209%203.375C12.75%203.375%2015.9525%205.7075%2017.25%209C15.9525%2012.2925%2012.75%2014.625%209%2014.625C5.25%2014.625%202.0475%2012.2925%200.75%209ZM15.615%209C14.3775%206.4725%2011.8425%204.875%209%204.875C6.1575%204.875%203.6225%206.4725%202.385%209C3.6225%2011.5275%206.1575%2013.125%209%2013.125C11.8425%2013.125%2014.3775%2011.5275%2015.615%209ZM9%207.125C10.035%207.125%2010.875%207.965%2010.875%209C10.875%2010.035%2010.035%2010.875%209%2010.875C7.965%2010.875%207.125%2010.035%207.125%209C7.125%207.965%207.965%207.125%209%207.125ZM5.625%209C5.625%207.14%207.14%205.625%209%205.625C10.86%205.625%2012.375%207.14%2012.375%209C12.375%2010.86%2010.86%2012.375%209%2012.375C7.14%2012.375%205.625%2010.86%205.625%209Z'%20fill='%23525252'/%3e%3c/g%3e%3c/svg%3e"
@@ -748,8 +748,8 @@ function App() {
                       />
                       <div className="text-wrapper">Leisure</div>
                     </div>
-                    <a className="btn follow rounded-5" href="/">
-                      Follow
+                    <a className="btn btn-dark follow rounded-5" href="/">
+                      Followed
                     </a>
                   </div>
                   <div className="d-flex align-items-center justify-content-between">
@@ -763,7 +763,7 @@ function App() {
                       />
                       <div className="text-wrapper">Activism</div>
                     </div>
-                    <a className="btn follow rounded-5" href="/">
+                    <a className="btn btn-light follow rounded-5" href="/">
                       Follow
                     </a>
                   </div>
@@ -778,7 +778,7 @@ function App() {
                       />
                       <div className="text-wrapper">MBA</div>
                     </div>
-                    <a className="btn follow rounded-5" href="/">
+                    <a className="btn btn-light follow rounded-5" href="/">
                       Follow
                     </a>
                   </div>
@@ -793,7 +793,7 @@ function App() {
                       />
                       <div className="text-wrapper">Philosophy</div>
                     </div>
-                    <a className="btn follow rounded-5" href="/">
+                    <a className="btn btn-light follow rounded-5" href="/">
                       Follow
                     </a>
                   </div>
