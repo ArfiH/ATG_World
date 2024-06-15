@@ -123,12 +123,17 @@ body {
   display: none;
   z-index: 2;
   background-color: white;
+  width: 80%;
 }
 
 #close-form {
   position: absolute;
   top: 0;
   right: 0px;
+}
+
+#modal-content {
+    width: 50rem;
 }
 
 .side-profile {
@@ -155,6 +160,24 @@ body {
 
 @media (max-width: 991px) {
     #joinBtn {
+        display: block;
+    }
+
+    #create-form {
+        width: 100%;
+    }
+
+    #modal-content {
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 15rem;
+    }
+
+    #form-side-img {
+        display: none;
+    }
+
+    #form-row {
         display: block;
     }
 }
