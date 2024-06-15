@@ -158,6 +158,10 @@ body {
     display: none;
 }
 
+#modal-header {
+    display: flex;
+}
+
 @media (max-width: 991px) {
     #joinBtn {
         display: block;
@@ -179,5 +183,9 @@ body {
 
     #form-row {
         display: block;
+    }
+
+    #modal-header {
+        display: none;
     }
 }

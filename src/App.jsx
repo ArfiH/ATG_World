@@ -78,8 +78,8 @@ function App() {
                 <span aria-hidden="true">×</span>
               </button>
               <div
-                className="modal-header custom-modal-header d-flex justify-content-center mb-4 p-2"
-                style={{ backgroundColor: "#EFFFF4", color: "#008A45" }}
+                id="modal-header" className="modal-header custom-modal-header justify-content-center mb-4 p-2"
+                style={{ backgroundColor: "#EFFFF4", color: "#008A45"}}
               >
                 Let's learn, share &amp; inspire each other with our passion for
                 computer engineering. Sign up now 🤘🏼
@@ -274,10 +274,10 @@ function App() {
             id="joinBtn"
             className="join-group btn text-white border-2 border-white"
             onClick={() => {
-              document.getElementById("create-form").style.display = "block";
-              document.querySelector(".modal-content").showModal();
               const joinBtn = document.querySelector(".join-group");
               if (joinBtn.textContent === "Join Group") {
+                document.getElementById("create-form").style.display = "block";
+                document.querySelector(".modal-content").showModal();
                 joinBtn.textContent = "Leave Group";
               } else {
                 joinBtn.textContent = "Join Group";
