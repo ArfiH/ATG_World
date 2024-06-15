@@ -15,20 +15,11 @@ function App() {
           </div>
           <div className="header-form">
             <form className="d-flex" style={{ width: 360, borderRadius: 21 }}>
-              <button className="custom-search" type="submit">
-                <img
-                  alt="Search"
-                  style={{ border: "none" }}
-                  className="search-img"
-                  src="data:image/svg+xml,%3csvg%20width='22'%20height='22'%20viewBox='0%200%2022%2022'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20id='baseline-search-24px'%20clip-path='url(%23clip0_1_1172)'%3e%3cpath%20id='Vector'%20d='M14.2083%2012.8333H13.4842L13.2275%2012.5858C14.1258%2011.5408%2014.6667%2010.1842%2014.6667%208.70833C14.6667%205.4175%2011.9992%202.75%208.70833%202.75C5.4175%202.75%202.75%205.4175%202.75%208.70833C2.75%2011.9992%205.4175%2014.6667%208.70833%2014.6667C10.1842%2014.6667%2011.5408%2014.1258%2012.5858%2013.2275L12.8333%2013.4842V14.2083L17.4167%2018.7825L18.7825%2017.4167L14.2083%2012.8333ZM8.70833%2012.8333C6.42583%2012.8333%204.58333%2010.9908%204.58333%208.70833C4.58333%206.42583%206.42583%204.58333%208.70833%204.58333C10.9908%204.58333%2012.8333%206.42583%2012.8333%208.70833C12.8333%2010.9908%2010.9908%2012.8333%208.70833%2012.8333Z'%20fill='%237A7A7A'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_1_1172'%3e%3crect%20width='22'%20height='22'%20fill='white'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e"
-                  width={22}
-                  height={22}
-                />
-              </button>
+              
               <input
-                className="form-control custom-input-search"
+                className="form-control custom-input-search rounded-pill"
                 type="search"
-                placeholder="Search for your favorite groups in ATG"
+                placeholder="🔎  Search for your favorite groups in ATG"
                 aria-label="Search"
               />
             </form>
@@ -715,8 +706,8 @@ function App() {
                     />
                     <input
                       type="text"
-                      placeholder="Enter Your Location"
-                      className="input-text"
+                      placeholder="  Enter Your Location"
+                      className="input-text border-0"
                     />
                   </div>
                   <button className="btn">
@@ -727,11 +718,11 @@ function App() {
                   </button>
                 </div>
                 <hr className="my-1" />
-                <div className="d-flex align-items-center gap-2 mb-4">
+                <div className="d-flex align-items-center gap-2 my-4">
                   <img
                     src="data:image/svg+xml,%3csvg%20width='16'%20height='16'%20viewBox='0%200%2016%2016'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20id='baseline-error_outline-24px'%20opacity='0.5'%20clip-path='url(%23clip0_1_1239)'%3e%3cpath%20id='Vector'%20d='M7.33333%209.99998H8.66667V11.3333H7.33333V9.99998ZM7.33333%204.66665H8.66667V8.66665H7.33333V4.66665ZM7.99333%201.33331C4.31333%201.33331%201.33333%204.31998%201.33333%207.99998C1.33333%2011.68%204.31333%2014.6666%207.99333%2014.6666C11.68%2014.6666%2014.6667%2011.68%2014.6667%207.99998C14.6667%204.31998%2011.68%201.33331%207.99333%201.33331ZM8%2013.3333C5.05333%2013.3333%202.66667%2010.9466%202.66667%207.99998C2.66667%205.05331%205.05333%202.66665%208%202.66665C10.9467%202.66665%2013.3333%205.05331%2013.3333%207.99998C13.3333%2010.9466%2010.9467%2013.3333%208%2013.3333Z'%20fill='black'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_1_1239'%3e%3crect%20width='16'%20height='16'%20fill='white'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e"
                     alt="information"
-                    className="align-self-start"
+                    className="mt-2 align-self-start"
                   />
                   <p className="location-info">
                     Your location will help us serve better and extend a
