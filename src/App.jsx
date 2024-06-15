@@ -1,6 +1,6 @@
 import "./App.css";
 import logo from "./assets/whole.svg"
-// import sideProfile from "./assets/Rectangle6.png"
+import formSideImage from "./assets/formSideImage.jpg"
 
 function App() {
   return (
@@ -246,8 +246,10 @@ function App() {
                             fdprocessedid="z1rjm"
                           >
                             <img
-                              src="https://dont-copy.netlify.app/assets/facebook-ImnSLa_q.svg"
+                              src="https://s3-alpha-sig.figma.com/img/2260/c71f/967377e16ffbb611ef03393e79e51f6e?Expires=1719187200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=TZdaqYj40GA4jv3EhToholknIWUtv8HxXMqxYOdS4OISvY6uLq2t8BhpMJt2PANl1js4wDfkB4VaKbFENKQu2FSWkANDGZEgkRpyuBOk-LuL2zvVdlAIsGrlBCZxk8JPfaEQ8a9mIC3zJscbXG66e5VPvyQ3LLbiu9zcOVaoMbBVy9I01dhhTkHCenDioEqOpglg-TykJHXFPBOkHX98SR4ClboNzRVUlu8eotyP9RQZ7h4y4cbMBSm79VdvaVRSsLCWfzrHKT7BwE1KYGxEMwTZo1iKCSLrKGXb391CC163TNSWSxuy~UMr0Tep9TnbbwwjvieMYxdlYIuWUeY4sw__"
                               alt="facebook"
+                              width="16px"
+                              height="16px"
                             />
                             Sign Up with Facebook
                           </button>
@@ -267,7 +269,7 @@ function App() {
                     <div className="col">
                       <div className="d-flex flex-column">
                         <img
-                          src="https://dont-copy.netlify.app/assets/signup-OCG-APNN.svg"
+                          src={formSideImage}
                           alt="atg-illustration"
                           style={{ width: "300px", height: "300px" }}
                         />
@@ -370,7 +372,7 @@ function App() {
                 }}
               >
                 <img
-                  src="https://dont-copy.netlify.app/assets/nature-rDsfVg8l.jpg"
+                  src="https://s3-alpha-sig.figma.com/img/8f0b/5f52/59515bfc8d2d4ff8928be097376153e9?Expires=1719187200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=AI96XbEM9G2nQUo-8USJmmBj2pUlj8V3sWG3YrYi3s3BGjFiUVMJ6cGqqkcZwxAZRfcXsOPTCv4yEHY84irTbgZiUK7G06xelQncLxvF-YGFKSvs-Fz5wqku9jXDrmJk5aMXI3DBRdCGZIqGXgpcvoR~lFlu1e8h-KTIGKPTrDVs0MVXGoobchz6NW7NLDOv5q68kCMZ5mgAKrzXXD3mS8uGepF0RVQwHcirt1KKSAi49GjtN9kT08h~D43-adfTpTqRU1eb22nevEDPdMpw2axYRAJGq4k-76egS5z06m6ogRtMwfUhz8CO5XqWGunnLuAVjqz8WNQ4hDDNWt2UGA__"
                   alt="Nature"
                   className="imagePost"
                 />
@@ -425,7 +427,7 @@ function App() {
                       <img
                         className="rounded-circle"
                         alt="Profile"
-                        src="https://dont-copy.netlify.app/assets/user1-COSOQoOX.jpg"
+                        src="https://s3-alpha-sig.figma.com/img/d809/8d9d/f42d73f4b2b7835b4c918c4edcf10f64?Expires=1719187200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=CdzbtHS0xYM~P0lnGXpvz7rWZsn~wFLjyulnJCsrLf2YouuGcwi16VPWtbvk2bW5V10lUNmrhAK3ckdX2yogkX2mIJYrbCGBT3C95DSjGpu7QfNaiGVLbwuLUWhtY13IRt6zNINlp17F2cTFg8dIXU~R4Yfymey31l3MH6aZwCSrEyPkib~DxvtgDi~TT2401unRBGqb-oKj7LPphwB0zTKMYXjyBdbWm~p8QzezKMyAJmseD1SpVYUmYA2ILY1Gk~ibNfObZTJOVb5lWZEdhu7YU7kgCkYMOHdFJAjBtMsVBqdvOXrTFfG1nxMEmZcQnPwICIHNK3V4heO0VlwVvA__"
                         width={48}
                         height={48}
                       />
@@ -471,7 +473,7 @@ function App() {
                 }}
               >
                 <img
-                  src="https://dont-copy.netlify.app/assets/wood-SIbopgrg.jpg"
+                  src="https://s3-alpha-sig.figma.com/img/250a/24fe/c8e32137d06a7bb3fd57b6dfb4e07bfe?Expires=1719187200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=W83tmxj4TJMo5r3JLp~ew1JFxM2wpaKvXttG2MfutexxDtnGWkUKrconwFWLnUYAYv8hO5zqghbowoJVXfm9AX3qGUTt6eoz3Ah2ppvzOvmliCoE0K2QLeLU0Z0H3urtMuIBaQkdqIHVS8Eltca409~pzwjZVTn1PeFM-O8efwljfMHqdopjW3-Ixuj-aXYkjqAxjZDRWPTJXuFkttnGSx9WXxdpPcdDy8tGVkWFVK1k2Ty9~-u6HNb-pqYRIcUf7ToCX-4cDlg1IXZqTN3IOqU5EzS9p4wbTijg-8OILeI52oiCJ7C0RRAg1deWik6OJ3rwyFJzdt9jl2FSraqSNw__"
                   alt="Nature"
                   className="imagePost"
                 />
@@ -526,7 +528,7 @@ function App() {
                       <img
                         className="rounded-circle"
                         alt="Profile"
-                        src="https://dont-copy.netlify.app/assets/15d7211204149d93adda6dfafb5d81f2-08Q1wamp.jpg"
+                        src="https://s3-alpha-sig.figma.com/img/c20f/9a59/15d7211204149d93adda6dfafb5d81f2?Expires=1719187200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=VNrZ57HOk5k5afFH2GLMkx3Y-i4lIVa2qudb5l7R9lUM~~ms2WJewGyzVt2TbRBYsroxwT~u7uJSKGi1GjBta54wnU9HxQHWZCVzTfzEvG9FcXeOChLzAv1Uoq7gCudmHjz8K7IigjPjlxMDrXdTRjg-9clTAAWmQk5ZchFjyX2udFcb65ELWBbO8zqvtnAOn4d7W7n5CPyTpNmQ3nbxzm1Y7G9YYNinAntUyUVOHvH6lZJ60wCkcmfaI0Q5vwNstfUXVHOwznKV3F1vHXlqSFnc7xONHHQ5e4nUERxoXNRbu--C~2REH78ShgdF9JOiY6a6t4lv~j9X16cL9sxNVQ__"
                         width={48}
                         height={48}
                       />
@@ -572,7 +574,7 @@ function App() {
                 }}
               >
                 <img
-                  src="https://dont-copy.netlify.app/assets/car-kZ9O3U5Q.jpg"
+                  src="https://s3-alpha-sig.figma.com/img/bdc0/79a9/a2e530610a1b91c9682ba7889c87c1b2?Expires=1719187200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=FoTuoKXN9AS8XTbmTOzof2D~2fuMTDlmTwjWfnngUqqNAGwzEtE8JmwpKWSPMJvD8hVSafQSg0LOdAHv1En5gSfeHl8aUp6IKyOsi0boxjqTjxS64bkzCLygWJ97tYFTdj3-GfglxSJJwgVWDW3i0sgQkGaAsG3pSMjGpSjNDqFFHjQtJPE8OgcAqI7yO1gxen-qXGhAZR72AC6Fc8PmxTU~LhdoUY6xrvNzD3-j7tkKad6akC1lHoaYB5yDjivcQJgpIITXgR8y6tfTf6JhUk9m~tuUUt-~VTSDQ7U-sOOuoprfbHHD9uYlorZxEWJ8HGEqPmUqVvyg2pxYWANdNQ__"
                   alt="Nature"
                   className="imagePost"
                 />
@@ -647,7 +649,7 @@ function App() {
                       <img
                         className="rounded-circle"
                         alt="Profile"
-                        src="https://dont-copy.netlify.app/assets/c3ac7682e52df2e10d0a36ec3f243a44-6fhMyk-S.jpg"
+                        src="https://s3-alpha-sig.figma.com/img/b8a9/097f/c3ac7682e52df2e10d0a36ec3f243a44?Expires=1719187200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=PoqF96KzdVES8JvPASuGUOInrwlT8Rv40V4ZtzbwXWLZwsbjJHKp0E29xZrhiY1y1zCd-TncVAiKsIT12wLIeGqI4oCBuRKs6dMqdBGSHK13i0axnuBISTMFGs~~dySqEDpydj~IDxk6zqIZGOeGl6clHw~42fBk2L8TIUwkMtVqkpHxqXxmYMa4Uve35ZLkO390o0QmsPRbZpZ-31rV3WBl4S1Otj6Du1J0fmKd5yJSFILfC5Qnjktme8SohdQO8bQTqPQfn54m4zeP9y7OZ8GM3VWILmqn3EuFB-o4ucOgd7YyVaCAJq9Q9EYSlAbomhqupVwpq1GZhECSB-0XjQ__"
                         width={48}
                         height={48}
                       />
@@ -761,7 +763,7 @@ function App() {
                       <img
                         className="rounded-circle"
                         alt="Profile"
-                        src="https://dont-copy.netlify.app/assets/siddrath-t0piMZRc.jpg"
+                        src="https://s3-alpha-sig.figma.com/img/8199/8e3c/09c5683fd07ee58841475464a08ce69f?Expires=1719187200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=qsEHSzyt4wYw7ptWWaMAzMgdXhKBQ1639EW4vFNz8qvkQriMDxN9-r13uHnnrlcOIvzLfIy9m3rfdxuJZUsXgUuvKQ7HuTg1aZLRLjt1J1NR7rhCwGSCTA0wnD0my2RRboMuadNltmVye1bX3IxOOxYwPjWLQPUPZH2I1LgjbGMHegrHrwvtf4Tnpfqpea1a9s5CVNjUrNsJxeZNQkq--flCe0O5iPf6Xx3-02iloN7X5Zo~wgtknpmNFpEKDUMY3IxQvxbqFlDFN7W6rQ9Im7Fch~cZQdN4fcbL~oVkOIDEt4UKIB4TyxyoJWk5-sQdj32k3vqcViHEsxkwjrvAeA__"
                         width={48}
                         height={48}
                       />
@@ -845,7 +847,7 @@ function App() {
                       <img
                         className="rounded-circle"
                         alt="Profile"
-                        src="https://dont-copy.netlify.app/assets/recGroup1-JHI-0zi5.jpg"
+                        src="https://s3-alpha-sig.figma.com/img/bb0d/5f13/7ffa8afe7647578af2381ac9090c32e2?Expires=1719187200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=gZQrCLgTmb~9ZgONYLxo5orU4xIFpnxnWTzXmpjv0TsyUOCpmfmR0CXHpV-d~zg5Eqyn8V7rWBRc1d2euuORY1AmrP4Yck4W0Xb4-1rLVTHPnI8nyqdj-AZgJ4s3QlClrsisyZU27LjKdaAyuHgkpo0p2mTlrqC-9nP7~Uie2NlshPxt~aoGN-Dyes8wt0O~~~o7a4g9TSYjcWgGNZnbHVCpLsuUcL4rNMUKInf5Lv3deWyfaiypODO2Qn5gmHv8Qi41rAmgyV66QNs~SBFC5gc8ygNuu8hEghKyAt1g63hvX4JCuxW9rwC8FKgzQnb1rOZ1D59ZqXJrR6nb0IZ8TQ__"
                         width={36}
                         height={36}
                       />
@@ -860,7 +862,7 @@ function App() {
                       <img
                         className="rounded-circle"
                         alt="Profile"
-                        src="https://dont-copy.netlify.app/assets/recGroup1-JHI-0zi5.jpg"
+                        src="https://s3-alpha-sig.figma.com/img/bcef/452c/f2f96211f57819f3ef6b3922e0cd72cf?Expires=1719187200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=cDsS7WH-oNMF-lmRkVQ2Eyb6C9Pw-mJSuXMi1jDUUPAt-oJZB1QnMn-vaRGF97OSBBLz0a4xIBwcYTMeYcXTpOjP5t3ez4gC7vKac76rbKfP5l156CrhfXZKc7PjWL~Ah-jrct4AtNRoBmGcxCnrjrQcAMk8K7FFuOYFbTbonL4pyhQNW-skRci-lin8JO-xzMHsr1XHuxTZbgymJ7NYFTmKtgii~U6aiNt1feJuZs745u3o-qnlaJ8AXGrhhxHulm2zWSZZU6eRqPblQSfd7yONpfWn6PqzPRF7C1e22iaYqgtr3yiZ76g41snT6agkGwKNWPSAuPYlsaPkY28ocw__"
                         width={36}
                         height={36}
                       />
@@ -875,7 +877,7 @@ function App() {
                       <img
                         className="rounded-circle"
                         alt="Profile"
-                        src="https://dont-copy.netlify.app/assets/recGroup3-AxHGDmNo.jpg"
+                        src="https://s3-alpha-sig.figma.com/img/8f0b/0ff9/829dac10d09fc377df6ec78c4098bc9a?Expires=1719187200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=L34FvE0iPnpPQ6q2STymCtuaqOXKd0N07BCU0pTinJrGchxfaV16QlMz8WfImuWjkcLyqkJEDgv0TW7Jo8iiwg9S-XkvN-vegYhDBU1UUHAB7TSSSuJBUcdr-H~Ng4-Ovi69G20CYmn~xSzNHZOaMo3pOKwKD3lP4a01iKrHkz-hAckxWaV7W5KEzWUhdU6M7N-mx-eO~xoSqh5ky3U06T9~57a4eEErc~ao8fT~qDJ0GUH5SvMG4kN4ooNtTmTbphzv5AudGaWI2wXTDhNqP5tx6zWlFEesFLnMBh7AmSj8l~LM7PKS~~n-7HfEc5KiZgBahFTwyoC3w7JDIHy-~w__"
                         width={36}
                         height={36}
                       />
@@ -890,7 +892,7 @@ function App() {
                       <img
                         className="rounded-circle"
                         alt="Profile"
-                        src="https://dont-copy.netlify.app/assets/recGroup4-cA6Wedko.jpg"
+                        src="https://s3-alpha-sig.figma.com/img/0533/15a9/cf46af0ebdaae2ffbbb5718726788a19?Expires=1719187200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=adaxj18Cy9AUqqMWeaWU7uWLKlDPRPB1E5VdJJ-khLT2Lt7XOicQowUNNug3BxzVZgN6-b3tW2~cXizoAzBrU8NbnKCL9mReYG74NMn9LzO0Vm8yWq8WFGe9ZhyK5a-BHMQ62X32Grgd9hDtKMcxheLjSrky-hezkZIZN6mKlIawOvyhPtILA~BneqcubaVtC9HUJ-zBRcEgnTxhNQmgalTzBHdbRq7T4TPwajSUulAliT~HbXQ0ovJOHxfIMQ8-2Z1l8oM2xLu9K5GS8hY4MczMdreDpR1Mt~sRHW992~lN8U69XbwVf9TvFpHu1GcNe93rtvGFThiC0o-DgOhaQA__"
                         width={36}
                         height={36}
                       />
