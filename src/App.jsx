@@ -2,6 +2,7 @@ import "./App.css";
 import logo from "./assets/whole.svg";
 import formSideImage from "./assets/formSideImage.jpg";
 import pen from "./assets/pen.png";
+import Card from "./components/Card";
 
 function App() {
   return (
@@ -213,7 +214,8 @@ function App() {
                         type="button"
                         className="btn"
                         onClick={() => {
-                          document.getElementById("sign-in-text").textContent = "or, Create Account"
+                          document.getElementById("sign-in-text").textContent =
+                            "or, Create Account";
                           if (
                             (document.getElementById(
                               "hide-for-sign-in1"
@@ -264,7 +266,10 @@ function App() {
                           }
                         }}
                       >
-                        <span className="text-secondary text-decoration-underline" id="sign-in-text">
+                        <span
+                          className="text-secondary text-decoration-underline"
+                          id="sign-in-text"
+                        >
                           or, Sign In
                         </span>
                       </button>
@@ -433,208 +438,21 @@ function App() {
             style={{ maxWidth: 1040 }}
           >
             <div className="posts-center position-relative">
-              <div
-                className="d-flex flex-column border border-1 rounded-2"
-                style={{
-                  maxWidth: 692,
-                  borderColor: "rgb(224, 224, 224)",
-                  fill: "rgb(255, 255, 255)",
-                }}
-              >
-                <img
-                  src="https://s3-alpha-sig.figma.com/img/8f0b/5f52/59515bfc8d2d4ff8928be097376153e9?Expires=1719187200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=AI96XbEM9G2nQUo-8USJmmBj2pUlj8V3sWG3YrYi3s3BGjFiUVMJ6cGqqkcZwxAZRfcXsOPTCv4yEHY84irTbgZiUK7G06xelQncLxvF-YGFKSvs-Fz5wqku9jXDrmJk5aMXI3DBRdCGZIqGXgpcvoR~lFlu1e8h-KTIGKPTrDVs0MVXGoobchz6NW7NLDOv5q68kCMZ5mgAKrzXXD3mS8uGepF0RVQwHcirt1KKSAi49GjtN9kT08h~D43-adfTpTqRU1eb22nevEDPdMpw2axYRAJGq4k-76egS5z06m6ogRtMwfUhz8CO5XqWGunnLuAVjqz8WNQ4hDDNWt2UGA__"
-                  alt="Nature"
-                  className="imagePost"
-                />
-                <div className="p-4">
-                  <h3 className="d-flex">✍️ Article</h3>
-                  <div className="d-flex gap-6 justify-content-between">
-                    <h4>
-                      What if famous brands had regular fonts? Meet
-                      RegulaBrands!
-                    </h4>
-                    <div className="btn align-self-start">
-                      <div className="dropdown">
-                        <div
-                          type="button"
-                          data-bs-toggle="dropdown"
-                          aria-expanded="false"
-                        >
-                          <img
-                            src="data:image/svg+xml,%3csvg%20width='28'%20height='28'%20viewBox='0%200%2028%2028'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20id='baseline-more_vert-24px'%3e%3cpath%20id='Vector'%20d='M18.6667%2014C18.6667%2015.2833%2019.7167%2016.3333%2021%2016.3333C22.2833%2016.3333%2023.3333%2015.2833%2023.3333%2014C23.3333%2012.7166%2022.2833%2011.6666%2021%2011.6666C19.7167%2011.6666%2018.6667%2012.7166%2018.6667%2014ZM16.3333%2014C16.3333%2012.7166%2015.2833%2011.6666%2014%2011.6666C12.7167%2011.6666%2011.6667%2012.7166%2011.6667%2014C11.6667%2015.2833%2012.7167%2016.3333%2014%2016.3333C15.2833%2016.3333%2016.3333%2015.2833%2016.3333%2014ZM9.33333%2014C9.33333%2012.7166%208.28333%2011.6666%207%2011.6666C5.71666%2011.6666%204.66666%2012.7166%204.66666%2014C4.66666%2015.2833%205.71666%2016.3333%207%2016.3333C8.28333%2016.3333%209.33333%2015.2833%209.33333%2014Z'%20fill='black'/%3e%3c/g%3e%3c/svg%3e"
-                            alt="more details"
-                            height="28px"
-                            width="28px"
-                          />
-                        </div>
-                        <ul className="dropdown-menu">
-                          <li>
-                            <button className="dropdown-item" type="button">
-                              Edit
-                            </button>
-                          </li>
-                          <li>
-                            <button className="dropdown-item" type="button">
-                              Report
-                            </button>
-                          </li>
-                          <li>
-                            <button className="dropdown-item" type="button">
-                              option 3
-                            </button>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                  <ul className="d-flex align-items-center gap-5 list-unstyled" />
-                  <p>
-                    I’ve worked in UX for the better part of a decade. From now
-                    on, I plan to rei…
-                  </p>
-                  <div className="d-flex justify-content-between align-items-center">
-                    <div className="d-flex align-items-center gap-2">
-                      <img
-                        className="rounded-circle"
-                        alt="Profile"
-                        src="https://s3-alpha-sig.figma.com/img/d809/8d9d/f42d73f4b2b7835b4c918c4edcf10f64?Expires=1719187200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=CdzbtHS0xYM~P0lnGXpvz7rWZsn~wFLjyulnJCsrLf2YouuGcwi16VPWtbvk2bW5V10lUNmrhAK3ckdX2yogkX2mIJYrbCGBT3C95DSjGpu7QfNaiGVLbwuLUWhtY13IRt6zNINlp17F2cTFg8dIXU~R4Yfymey31l3MH6aZwCSrEyPkib~DxvtgDi~TT2401unRBGqb-oKj7LPphwB0zTKMYXjyBdbWm~p8QzezKMyAJmseD1SpVYUmYA2ILY1Gk~ibNfObZTJOVb5lWZEdhu7YU7kgCkYMOHdFJAjBtMsVBqdvOXrTFfG1nxMEmZcQnPwICIHNK3V4heO0VlwVvA__"
-                        width={48}
-                        height={48}
-                      />
-                      <div className="d-flex flex-column">
-                        <div className="text-wrapper">Sarthak Kamra</div>
-                        <div className="d-lg-none">
-                          <img
-                            src="data:image/svg+xml,%3csvg%20width='18'%20height='18'%20viewBox='0%200%2018%2018'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20id='icon/action/visibility_24px'%3e%3cpath%20id='icon/action/visibility_24px_2'%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M0.75%209C2.0475%205.7075%205.25%203.375%209%203.375C12.75%203.375%2015.9525%205.7075%2017.25%209C15.9525%2012.2925%2012.75%2014.625%209%2014.625C5.25%2014.625%202.0475%2012.2925%200.75%209ZM15.615%209C14.3775%206.4725%2011.8425%204.875%209%204.875C6.1575%204.875%203.6225%206.4725%202.385%209C3.6225%2011.5275%206.1575%2013.125%209%2013.125C11.8425%2013.125%2014.3775%2011.5275%2015.615%209ZM9%207.125C10.035%207.125%2010.875%207.965%2010.875%209C10.875%2010.035%2010.035%2010.875%209%2010.875C7.965%2010.875%207.125%2010.035%207.125%209C7.125%207.965%207.965%207.125%209%207.125ZM5.625%209C5.625%207.14%207.14%205.625%209%205.625C10.86%205.625%2012.375%207.14%2012.375%209C12.375%2010.86%2010.86%2012.375%209%2012.375C7.14%2012.375%205.625%2010.86%205.625%209Z'%20fill='%23525252'/%3e%3c/g%3e%3c/svg%3e"
-                            alt="watch"
-                          />
-                          <span>1.4k views</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="d-flex justify-content-between align-items-center">
-                      <div className="d-none d-lg-block pe-4">
-                        <img
-                          src="data:image/svg+xml,%3csvg%20width='18'%20height='18'%20viewBox='0%200%2018%2018'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20id='icon/action/visibility_24px'%3e%3cpath%20id='icon/action/visibility_24px_2'%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M0.75%209C2.0475%205.7075%205.25%203.375%209%203.375C12.75%203.375%2015.9525%205.7075%2017.25%209C15.9525%2012.2925%2012.75%2014.625%209%2014.625C5.25%2014.625%202.0475%2012.2925%200.75%209ZM15.615%209C14.3775%206.4725%2011.8425%204.875%209%204.875C6.1575%204.875%203.6225%206.4725%202.385%209C3.6225%2011.5275%206.1575%2013.125%209%2013.125C11.8425%2013.125%2014.3775%2011.5275%2015.615%209ZM9%207.125C10.035%207.125%2010.875%207.965%2010.875%209C10.875%2010.035%2010.035%2010.875%209%2010.875C7.965%2010.875%207.125%2010.035%207.125%209C7.125%207.965%207.965%207.125%209%207.125ZM5.625%209C5.625%207.14%207.14%205.625%209%205.625C10.86%205.625%2012.375%207.14%2012.375%209C12.375%2010.86%2010.86%2012.375%209%2012.375C7.14%2012.375%205.625%2010.86%205.625%209Z'%20fill='%23525252'/%3e%3c/g%3e%3c/svg%3e"
-                          alt="watch"
-                        />
-                        <span>1.4k views</span>
-                      </div>
-                      <button
-                        className="btn d-flex align-items-center gap-2"
-                        style={{ background: "rgb(237, 238, 240)" }}
-                      >
-                        <img
-                          src="data:image/svg+xml,%3csvg%20width='18'%20height='18'%20viewBox='0%200%2018%2018'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20id='baseline-share-24px'%20clip-path='url(%23clip0_1_1104)'%3e%3cpath%20id='Vector'%20d='M13.5%2012.06C12.93%2012.06%2012.42%2012.285%2012.03%2012.6375L6.6825%209.525C6.72%209.3525%206.75%209.18%206.75%209C6.75%208.82%206.72%208.6475%206.6825%208.475L11.97%205.3925C12.375%205.7675%2012.9075%206%2013.5%206C14.745%206%2015.75%204.995%2015.75%203.75C15.75%202.505%2014.745%201.5%2013.5%201.5C12.255%201.5%2011.25%202.505%2011.25%203.75C11.25%203.93%2011.28%204.1025%2011.3175%204.275L6.03%207.3575C5.625%206.9825%205.0925%206.75%204.5%206.75C3.255%206.75%202.25%207.755%202.25%209C2.25%2010.245%203.255%2011.25%204.5%2011.25C5.0925%2011.25%205.625%2011.0175%206.03%2010.6425L11.37%2013.7625C11.3325%2013.92%2011.31%2014.085%2011.31%2014.25C11.31%2015.4575%2012.2925%2016.44%2013.5%2016.44C14.7075%2016.44%2015.69%2015.4575%2015.69%2014.25C15.69%2013.0425%2014.7075%2012.06%2013.5%2012.06Z'%20fill='%232D2D2D'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_1_1104'%3e%3crect%20width='18'%20height='18'%20fill='white'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e"
-                          alt="share"
-                        />
-                        <span className="d-lg-none">Share</span>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div
-                className="d-flex flex-column border border-1 rounded-2"
-                style={{
-                  maxWidth: 692,
-                  borderColor: "rgb(224, 224, 224)",
-                  fill: "rgb(255, 255, 255)",
-                }}
-              >
-                <img
-                  src="https://s3-alpha-sig.figma.com/img/250a/24fe/c8e32137d06a7bb3fd57b6dfb4e07bfe?Expires=1719187200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=W83tmxj4TJMo5r3JLp~ew1JFxM2wpaKvXttG2MfutexxDtnGWkUKrconwFWLnUYAYv8hO5zqghbowoJVXfm9AX3qGUTt6eoz3Ah2ppvzOvmliCoE0K2QLeLU0Z0H3urtMuIBaQkdqIHVS8Eltca409~pzwjZVTn1PeFM-O8efwljfMHqdopjW3-Ixuj-aXYkjqAxjZDRWPTJXuFkttnGSx9WXxdpPcdDy8tGVkWFVK1k2Ty9~-u6HNb-pqYRIcUf7ToCX-4cDlg1IXZqTN3IOqU5EzS9p4wbTijg-8OILeI52oiCJ7C0RRAg1deWik6OJ3rwyFJzdt9jl2FSraqSNw__"
-                  alt="Nature"
-                  className="imagePost"
-                />
-                <div className="p-4">
-                  <h3 className="d-flex">🔬️ Education</h3>
-                  <div className="d-flex gap-6 justify-content-between">
-                    <h4>
-                      Tax Benefits for Investment under National Pension Scheme
-                      launched by Government
-                    </h4>
-                    <div className="btn align-self-start">
-                      <div className="dropdown">
-                        <div
-                          type="button"
-                          data-bs-toggle="dropdown"
-                          aria-expanded="false"
-                        >
-                          <img
-                            src="data:image/svg+xml,%3csvg%20width='28'%20height='28'%20viewBox='0%200%2028%2028'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20id='baseline-more_vert-24px'%3e%3cpath%20id='Vector'%20d='M18.6667%2014C18.6667%2015.2833%2019.7167%2016.3333%2021%2016.3333C22.2833%2016.3333%2023.3333%2015.2833%2023.3333%2014C23.3333%2012.7166%2022.2833%2011.6666%2021%2011.6666C19.7167%2011.6666%2018.6667%2012.7166%2018.6667%2014ZM16.3333%2014C16.3333%2012.7166%2015.2833%2011.6666%2014%2011.6666C12.7167%2011.6666%2011.6667%2012.7166%2011.6667%2014C11.6667%2015.2833%2012.7167%2016.3333%2014%2016.3333C15.2833%2016.3333%2016.3333%2015.2833%2016.3333%2014ZM9.33333%2014C9.33333%2012.7166%208.28333%2011.6666%207%2011.6666C5.71666%2011.6666%204.66666%2012.7166%204.66666%2014C4.66666%2015.2833%205.71666%2016.3333%207%2016.3333C8.28333%2016.3333%209.33333%2015.2833%209.33333%2014Z'%20fill='black'/%3e%3c/g%3e%3c/svg%3e"
-                            alt="more details"
-                            height="28px"
-                            width="28px"
-                          />
-                        </div>
-                        <ul className="dropdown-menu">
-                          <li>
-                            <button className="dropdown-item" type="button">
-                              Edit
-                            </button>
-                          </li>
-                          <li>
-                            <button className="dropdown-item" type="button">
-                              Report
-                            </button>
-                          </li>
-                          <li>
-                            <button className="dropdown-item" type="button">
-                              option 3
-                            </button>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                  <ul className="d-flex align-items-center gap-5 list-unstyled" />
-                  <p>
-                    I’ve worked in UX for the better part of a decade. From now
-                    on, I plan to rei…
-                  </p>
-                  <div className="d-flex justify-content-between align-items-center">
-                    <div className="d-flex align-items-center gap-2">
-                      <img
-                        className="rounded-circle"
-                        alt="Profile"
-                        src="https://s3-alpha-sig.figma.com/img/c20f/9a59/15d7211204149d93adda6dfafb5d81f2?Expires=1719187200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=VNrZ57HOk5k5afFH2GLMkx3Y-i4lIVa2qudb5l7R9lUM~~ms2WJewGyzVt2TbRBYsroxwT~u7uJSKGi1GjBta54wnU9HxQHWZCVzTfzEvG9FcXeOChLzAv1Uoq7gCudmHjz8K7IigjPjlxMDrXdTRjg-9clTAAWmQk5ZchFjyX2udFcb65ELWBbO8zqvtnAOn4d7W7n5CPyTpNmQ3nbxzm1Y7G9YYNinAntUyUVOHvH6lZJ60wCkcmfaI0Q5vwNstfUXVHOwznKV3F1vHXlqSFnc7xONHHQ5e4nUERxoXNRbu--C~2REH78ShgdF9JOiY6a6t4lv~j9X16cL9sxNVQ__"
-                        width={48}
-                        height={48}
-                      />
-                      <div className="d-flex flex-column">
-                        <div className="text-wrapper">Sarah West</div>
-                        <div className="d-lg-none">
-                          <img
-                            src="data:image/svg+xml,%3csvg%20width='18'%20height='18'%20viewBox='0%200%2018%2018'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20id='icon/action/visibility_24px'%3e%3cpath%20id='icon/action/visibility_24px_2'%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M0.75%209C2.0475%205.7075%205.25%203.375%209%203.375C12.75%203.375%2015.9525%205.7075%2017.25%209C15.9525%2012.2925%2012.75%2014.625%209%2014.625C5.25%2014.625%202.0475%2012.2925%200.75%209ZM15.615%209C14.3775%206.4725%2011.8425%204.875%209%204.875C6.1575%204.875%203.6225%206.4725%202.385%209C3.6225%2011.5275%206.1575%2013.125%209%2013.125C11.8425%2013.125%2014.3775%2011.5275%2015.615%209ZM9%207.125C10.035%207.125%2010.875%207.965%2010.875%209C10.875%2010.035%2010.035%2010.875%209%2010.875C7.965%2010.875%207.125%2010.035%207.125%209C7.125%207.965%207.965%207.125%209%207.125ZM5.625%209C5.625%207.14%207.14%205.625%209%205.625C10.86%205.625%2012.375%207.14%2012.375%209C12.375%2010.86%2010.86%2012.375%209%2012.375C7.14%2012.375%205.625%2010.86%205.625%209Z'%20fill='%23525252'/%3e%3c/g%3e%3c/svg%3e"
-                            alt="watch"
-                          />
-                          <span>1.4k views</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="d-flex justify-content-between align-items-center">
-                      <div className="d-none d-lg-block pe-4">
-                        <img
-                          src="data:image/svg+xml,%3csvg%20width='18'%20height='18'%20viewBox='0%200%2018%2018'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20id='icon/action/visibility_24px'%3e%3cpath%20id='icon/action/visibility_24px_2'%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M0.75%209C2.0475%205.7075%205.25%203.375%209%203.375C12.75%203.375%2015.9525%205.7075%2017.25%209C15.9525%2012.2925%2012.75%2014.625%209%2014.625C5.25%2014.625%202.0475%2012.2925%200.75%209ZM15.615%209C14.3775%206.4725%2011.8425%204.875%209%204.875C6.1575%204.875%203.6225%206.4725%202.385%209C3.6225%2011.5275%206.1575%2013.125%209%2013.125C11.8425%2013.125%2014.3775%2011.5275%2015.615%209ZM9%207.125C10.035%207.125%2010.875%207.965%2010.875%209C10.875%2010.035%2010.035%2010.875%209%2010.875C7.965%2010.875%207.125%2010.035%207.125%209C7.125%207.965%207.965%207.125%209%207.125ZM5.625%209C5.625%207.14%207.14%205.625%209%205.625C10.86%205.625%2012.375%207.14%2012.375%209C12.375%2010.86%2010.86%2012.375%209%2012.375C7.14%2012.375%205.625%2010.86%205.625%209Z'%20fill='%23525252'/%3e%3c/g%3e%3c/svg%3e"
-                          alt="watch"
-                        />
-                        <span>1.4k views</span>
-                      </div>
-                      <button
-                        className="btn d-flex align-items-center gap-2"
-                        style={{ background: "rgb(237, 238, 240)" }}
-                      >
-                        <img
-                          src="data:image/svg+xml,%3csvg%20width='18'%20height='18'%20viewBox='0%200%2018%2018'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20id='baseline-share-24px'%20clip-path='url(%23clip0_1_1104)'%3e%3cpath%20id='Vector'%20d='M13.5%2012.06C12.93%2012.06%2012.42%2012.285%2012.03%2012.6375L6.6825%209.525C6.72%209.3525%206.75%209.18%206.75%209C6.75%208.82%206.72%208.6475%206.6825%208.475L11.97%205.3925C12.375%205.7675%2012.9075%206%2013.5%206C14.745%206%2015.75%204.995%2015.75%203.75C15.75%202.505%2014.745%201.5%2013.5%201.5C12.255%201.5%2011.25%202.505%2011.25%203.75C11.25%203.93%2011.28%204.1025%2011.3175%204.275L6.03%207.3575C5.625%206.9825%205.0925%206.75%204.5%206.75C3.255%206.75%202.25%207.755%202.25%209C2.25%2010.245%203.255%2011.25%204.5%2011.25C5.0925%2011.25%205.625%2011.0175%206.03%2010.6425L11.37%2013.7625C11.3325%2013.92%2011.31%2014.085%2011.31%2014.25C11.31%2015.4575%2012.2925%2016.44%2013.5%2016.44C14.7075%2016.44%2015.69%2015.4575%2015.69%2014.25C15.69%2013.0425%2014.7075%2012.06%2013.5%2012.06Z'%20fill='%232D2D2D'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_1_1104'%3e%3crect%20width='18'%20height='18'%20fill='white'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e"
-                          alt="share"
-                        />
-                        <span className="d-lg-none">Share</span>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <Card
+                postHead="✍️ Article"
+                postSubject="What if famous brands had regular fonts? Meet RegulaBrands!"
+                postImgSrc="https://s3-alpha-sig.figma.com/img/8f0b/5f52/59515bfc8d2d4ff8928be097376153e9?Expires=1719187200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=AI96XbEM9G2nQUo-8USJmmBj2pUlj8V3sWG3YrYi3s3BGjFiUVMJ6cGqqkcZwxAZRfcXsOPTCv4yEHY84irTbgZiUK7G06xelQncLxvF-YGFKSvs-Fz5wqku9jXDrmJk5aMXI3DBRdCGZIqGXgpcvoR~lFlu1e8h-KTIGKPTrDVs0MVXGoobchz6NW7NLDOv5q68kCMZ5mgAKrzXXD3mS8uGepF0RVQwHcirt1KKSAi49GjtN9kT08h~D43-adfTpTqRU1eb22nevEDPdMpw2axYRAJGq4k-76egS5z06m6ogRtMwfUhz8CO5XqWGunnLuAVjqz8WNQ4hDDNWt2UGA__"
+                postAvatar="https://s3-alpha-sig.figma.com/img/d809/8d9d/f42d73f4b2b7835b4c918c4edcf10f64?Expires=1719187200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=CdzbtHS0xYM~P0lnGXpvz7rWZsn~wFLjyulnJCsrLf2YouuGcwi16VPWtbvk2bW5V10lUNmrhAK3ckdX2yogkX2mIJYrbCGBT3C95DSjGpu7QfNaiGVLbwuLUWhtY13IRt6zNINlp17F2cTFg8dIXU~R4Yfymey31l3MH6aZwCSrEyPkib~DxvtgDi~TT2401unRBGqb-oKj7LPphwB0zTKMYXjyBdbWm~p8QzezKMyAJmseD1SpVYUmYA2ILY1Gk~ibNfObZTJOVb5lWZEdhu7YU7kgCkYMOHdFJAjBtMsVBqdvOXrTFfG1nxMEmZcQnPwICIHNK3V4heO0VlwVvA__"
+                postAuthor="Sarthak Kamra"
+              />
+              <Card
+                postHead="🔬️ Education"
+                postSubject="Tax Benefits for Investment under National Pension Scheme
+                      launched by Government"
+                postImgSrc="https://s3-alpha-sig.figma.com/img/250a/24fe/c8e32137d06a7bb3fd57b6dfb4e07bfe?Expires=1719187200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=W83tmxj4TJMo5r3JLp~ew1JFxM2wpaKvXttG2MfutexxDtnGWkUKrconwFWLnUYAYv8hO5zqghbowoJVXfm9AX3qGUTt6eoz3Ah2ppvzOvmliCoE0K2QLeLU0Z0H3urtMuIBaQkdqIHVS8Eltca409~pzwjZVTn1PeFM-O8efwljfMHqdopjW3-Ixuj-aXYkjqAxjZDRWPTJXuFkttnGSx9WXxdpPcdDy8tGVkWFVK1k2Ty9~-u6HNb-pqYRIcUf7ToCX-4cDlg1IXZqTN3IOqU5EzS9p4wbTijg-8OILeI52oiCJ7C0RRAg1deWik6OJ3rwyFJzdt9jl2FSraqSNw__"
+                postAvatar="https://s3-alpha-sig.figma.com/img/c20f/9a59/15d7211204149d93adda6dfafb5d81f2?Expires=1719187200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=VNrZ57HOk5k5afFH2GLMkx3Y-i4lIVa2qudb5l7R9lUM~~ms2WJewGyzVt2TbRBYsroxwT~u7uJSKGi1GjBta54wnU9HxQHWZCVzTfzEvG9FcXeOChLzAv1Uoq7gCudmHjz8K7IigjPjlxMDrXdTRjg-9clTAAWmQk5ZchFjyX2udFcb65ELWBbO8zqvtnAOn4d7W7n5CPyTpNmQ3nbxzm1Y7G9YYNinAntUyUVOHvH6lZJ60wCkcmfaI0Q5vwNstfUXVHOwznKV3F1vHXlqSFnc7xONHHQ5e4nUERxoXNRbu--C~2REH78ShgdF9JOiY6a6t4lv~j9X16cL9sxNVQ__"
+                postAuthor="Sarah West"
+              />
               <div
                 className="d-flex flex-column border border-1 rounded-2"
                 style={{
