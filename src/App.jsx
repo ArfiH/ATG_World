@@ -191,7 +191,7 @@ function App() {
                       data-bs-dismiss="modal"
                       id="update1"
                       onClick={() => {
-                        document.querySelector("#show").style.display = "none";
+                        // document.querySelector("#show").style.display = "none";
                         document.querySelector(
                           ".header-button"
                         ).innerHTML = `<div class="side-profile">
@@ -209,6 +209,7 @@ function App() {
                 />
                     </div>
                     `;
+                    document.querySelector(".dialog-content").close();
                       }}
                     >
                       Create Account
