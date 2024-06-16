@@ -213,6 +213,7 @@ function App() {
                         type="button"
                         className="btn"
                         onClick={() => {
+                          document.getElementById("sign-in-text").textContent = "or, Create Account"
                           if (
                             (document.getElementById(
                               "hide-for-sign-in1"
@@ -263,8 +264,8 @@ function App() {
                           }
                         }}
                       >
-                        <span className="text-primary" id="sign-in">
-                          Sign In
+                        <span className="text-secondary text-decoration-underline" id="sign-in-text">
+                          or, Sign In
                         </span>
                       </button>
                     </div>
