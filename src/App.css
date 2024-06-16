@@ -100,16 +100,14 @@ body {
   background-color: #c4c4c4;
 }
 
-.modal-content {
+.dialog-content {
   position: relative;
-  display: flex;
-  flex-direction: column;
   width: 80%;
   background-color: white;
   border-radius: 10px;
 }
 
-.modal-content::backdrop {
+.dialog-content::backdrop {
   backdrop-filter: blur(8px);
   opacity: 1;
 }
@@ -120,7 +118,7 @@ body {
 }
 
 #create-form {
-  display: none;
+  display: block;
   z-index: 2;
   background-color: white;
   width: 80%;
