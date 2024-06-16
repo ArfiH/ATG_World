@@ -170,6 +170,10 @@ body {
   display: none;
 }
 
+.back-arrow {
+  display: none;
+}
+
 @media (max-width: 991px) {
   #joinBtn {
     display: block;
@@ -210,5 +214,11 @@ body {
 
   #mobile-posts-header {
     display: flex;
+  }
+
+  .back-arrow {
+    position: absolute;
+    top: 20px;
+    left: 20px;
   }
 }
