@@ -128,7 +128,9 @@ body {
   position: absolute;
   top: 0;
   right: 0px;
-  border-radius: 10px;
+  border-radius: 50%;
+  background-color: #fff;
+  padding: 0.5rem;
 }
 
 #modal-content {
@@ -174,6 +176,14 @@ body {
 }
 
 .edit-post {
+  display: none;
+}
+
+#update1 {
+  width: 100%;
+}
+
+#mobile-alternate {
   display: none;
 }
 
@@ -232,22 +242,24 @@ body {
     right: 20px;
   }
 
-  #close-form {
-    background-color: #212529;
-    top: 20px;
-    right: 10px;
-    border-radius: 50%;
-    color: white;
-    font-weight: bold;
-  }
-
   #create-or-sign {
     position: absolute;
     top: 282px;
     right: 10px;
   }
 
-  #update1 {
-    padding: 0 0.1rem;
+  .mobile-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+  }
+
+  #mobile-alternate {
+    width: 30%;
+    display: block;
+  }
+
+  #large-alternate {
+    display: none;
   }
 }
