@@ -1,6 +1,7 @@
 import "./App.css";
 import logo from "./assets/whole.svg";
 import formSideImage from "./assets/formSideImage.jpg";
+import pen from "./assets/pen.png"
 
 function App() {
   return (
@@ -265,7 +266,18 @@ function App() {
         </div>
         <div className="container1" style={{ zIndex: 1 }}>
           <button className="back-arrow btn text-white">
-            <svg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M16 7H3.83L9.42 1.41L8 0L0 8L8 16L9.41 14.59L3.83 9H16V7Z' fill='white'/></svg>
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16 7H3.83L9.42 1.41L8 0L0 8L8 16L9.41 14.59L3.83 9H16V7Z"
+                fill="white"
+              />
+            </svg>
           </button>
           <button
             id="joinBtn"
@@ -355,19 +367,22 @@ function App() {
         </div>
         <hr className="mx-auto mt-0" style={{ maxWidth: 1040 }} />
         <div className="container3">
-          <div id="mobile-posts-header" className="mx-auto my-1 gap-5 justify-content-between align-items-center">
+          <div
+            id="mobile-posts-header"
+            className="mx-auto my-2 gap-5 justify-content-between align-items-center"
+          >
             <p className="posts-mobile">Posts (368)</p>
             <button
-                className="btn"
-                aria-label="write-post"
-                style={{ background: "rgb(242, 242, 242)" }}
-              >
-                Filter
-                <img
-                  src="data:image/svg+xml,%3csvg%20width='22'%20height='22'%20viewBox='0%200%2022%2022'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20id='baseline-arrow_drop_down-24px'%20clip-path='url(%23clip0_1_1136)'%3e%3cpath%20id='Vector'%20d='M6.41667%209.16669L11%2013.75L15.5833%209.16669H6.41667Z'%20fill='black'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_1_1136'%3e%3crect%20width='22'%20height='22'%20fill='white'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e"
-                  alt="arrow down"
-                />
-              </button>
+              className="btn"
+              aria-label="write-post"
+              style={{ background: "rgb(242, 242, 242)" }}
+            >
+              Filter
+              <img
+                src="data:image/svg+xml,%3csvg%20width='22'%20height='22'%20viewBox='0%200%2022%2022'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20id='baseline-arrow_drop_down-24px'%20clip-path='url(%23clip0_1_1136)'%3e%3cpath%20id='Vector'%20d='M6.41667%209.16669L11%2013.75L15.5833%209.16669H6.41667Z'%20fill='black'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_1_1136'%3e%3crect%20width='22'%20height='22'%20fill='white'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e"
+                alt="arrow down"
+              />
+            </button>
           </div>
           <div
             id="main"
@@ -810,6 +825,12 @@ function App() {
                       </button>
                     </div>
                   </div>
+                  <div className="edit-post">
+                    <button className="btn btn-outline-primary border-0 rounded-circle p-3" style={{backgroundColor: "red", backgroundImage: "linear-gradient(to bottom right, #FF5C5C, #F0568A)", color: "white"}}>
+                      <img src={pen} alt="Edit post" />
+                    </button>
+                  </div>
+
                 </div>
               </div>
             </div>
