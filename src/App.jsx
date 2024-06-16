@@ -28,7 +28,6 @@ function App() {
               data-bs-toggle="modal"
               data-bs-target="#exampleModal"
               onClick={() => {
-                // document.getElementById("create-form").style.display = "block";
                 document.querySelector(".dialog-content").showModal();
               }}
             >
@@ -68,7 +67,6 @@ function App() {
             }}
             onClick={() => {
               document.querySelector(".dialog-content").close();
-              document.getElementById("create-form").style.display = "none";
             }}
           >
             <span aria-hidden="true">×</span>
@@ -275,7 +273,6 @@ function App() {
             onClick={() => {
               const joinBtn = document.querySelector(".join-group");
               if (joinBtn.textContent === "Join Group") {
-                document.getElementById("create-form").style.display = "block";
                 document.querySelector(".dialog-content").showModal();
                 joinBtn.textContent = "Leave Group";
               } else {
